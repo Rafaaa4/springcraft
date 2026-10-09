@@ -58,3 +58,17 @@ To verify that you have Java, Maven, Gradle, and Python properly installed:
 ```bash
 springcraft doctor
 ```
+
+## Updating SpringCraft
+
+To get the latest features and bug fixes, you can update your local installation.
+
+If you installed using **pipx** (Recommended):
+```bash
+pipx upgrade springcraft-cli
+```
+
+If you installed using **pip**:
+```bash
+pip install --upgrade git+https://github.com/Rafaaa4/springcraft.git
+```

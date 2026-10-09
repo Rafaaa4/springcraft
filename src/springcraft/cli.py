@@ -199,5 +199,14 @@ def doctor() -> None:
         except (OSError, subprocess.TimeoutExpired) as exc:
             console.print(f"[yellow]CHECK[/yellow]  {label}: {exc}")
 
+@app.command()
+def update() -> None:
+    """Show instructions on how to update SpringCraft."""
+    console.print("[bold cyan]To update SpringCraft to the latest version, run one of the following commands:[/bold cyan]\n")
+    console.print("If you installed via [bold]pipx[/bold] (Recommended):")
+    console.print("  [green]pipx upgrade springcraft-cli[/green]\n")
+    console.print("If you installed via [bold]pip[/bold]:")
+    console.print("  [green]pip install --upgrade git+https://github.com/Rafaaa4/springcraft.git[/green]")
+
 if __name__ == "__main__":
     app()
